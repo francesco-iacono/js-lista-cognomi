@@ -14,9 +14,20 @@ console.log(numeroCognomi);
 cognomi.sort();
 // Scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova.
 var posizioneCognome = 0;
+// con il ciclo for
 for (var i = 0; i < cognomi.length; i++) {
     console.log(cognomi[i]);
-    posizioneCognome = posizioneCognome + 1;
+    posizioneCognome++;
     console.log(posizioneCognome);
     document.getElementById('lista-cognomi').innerHTML += posizioneCognome + "." + cognomi[i] + "<br>";
 };
+
+// con il ciclo while
+// var i = 0;
+// while (i < cognomi.length) {
+//       console.log(cognomi[i]);
+//       posizioneCognome++;
+//       console.log(posizioneCognome);
+//       document.getElementById('lista-cognomi').innerHTML += posizioneCognome + "." + cognomi[i] + "<br>";
+//       i++;
+// }
