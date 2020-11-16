@@ -15,8 +15,8 @@ cognomi.sort();
 // Scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova.
 var posizioneCognome = 0;
 for (var i = 0; i < cognomi.length; i++) {
-    console.log(i, cognomi[i]);
+    console.log(cognomi[i]);
     posizioneCognome = posizioneCognome + 1;
     console.log(posizioneCognome);
     document.getElementById('lista-cognomi').innerHTML += posizioneCognome + "." + cognomi[i] + "<br>";
-}
+};
